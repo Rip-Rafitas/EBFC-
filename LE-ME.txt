@@ -1,9 +1,0 @@
-EBFC+ — instalação da versão Firebase
-
-1) Firebase Console > projeto EBFC-PLUS > Definições do projeto > Geral > As tuas apps. Regista uma app Web (</>) se ainda não houver uma e copia a configuração para firebaseConfig no index.html, substituindo COLOCA_AQUI_API_KEY, COLOCA_AQUI_PROJECT_ID, COLOCA_AQUI_SENDER_ID e COLOCA_AQUI_APP_ID e o authDomain/storageBucket.
-2) Authentication > Sign-in method: ativa Google. Em Authorized domains, confirma o domínio GitHub Pages usado.
-3) Abre firestore.rules e substitui ADMIN_EMAIL pelo email Google do administrador. Publica o conteúdo em Firestore Database > Rules. Não deixes regras abertas.
-4) Inicia sessão uma vez com a conta do administrador e copia o UID em Authentication > Users. Em Firestore cria users/UID com campos name (string), email (email exato), status (approved), role (admin), bio (Administrador), favorites (array vazio).
-5) Substitui o index.html do GitHub Pages pelo deste pacote. Publica em HTTPS.
-
-IMPORTANTE: isto é uma primeira versão funcional, mas requer os passos de configuração. O código de convite é recolhido, mas não é validado por backend nesta versão; a aprovação manual é o controlo efetivo. Não partilhes o código como se fosse proteção técnica. Materiais/fotografias guardam links HTTPS, não carregam ficheiros para Firebase Storage. Testa com contas separadas antes de usar com toda a turma.
